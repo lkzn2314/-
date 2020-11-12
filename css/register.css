@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?tomleg');
+  src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+    url('../fonts/icomoon.woff?tomleg') format('woff'),
+    url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+body {
+    background-color: #F5F5F5;
+    color: #333;
+}
+.register {
+    width: 854px;
+    height: 550px;
+    margin: 60px auto;
+    text-align: center;
+    background-color: #FFF;
+}
+.logo {
+    width: 49px;
+    height: 48px;
+    margin: 0 auto 39px;
+    background: #FF6700 url(../images/mi-logo.png) no-repeat;
+}
+h1 {
+    margin-bottom: 28px;
+    font-size: 30px;
+    color: #333;
+    font-family: arial;
+    font-weight: normal;
+}
+.register_list {
+    position: relative;
+    margin: 0 auto;
+    width: 332px;
+    height: 248px;
+    text-align: left;
+}
+.register_list p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.register_list div:first-of-type {
+    float: left;
+    width: 289px;
+    height: 40px;
+    border: 1px solid #e8e8e8;
+    font-size: 14px;
+    line-height: 40px; 
+    color: #555;
+    text-indent: 1em;
+    cursor: pointer;
+}
+.register_list button {
+    float: left;
+    width: 42px;
+    height: 40px;
+    margin-left: -1px;
+    margin-bottom: 5px;
+    border: 1px solid #e8e8e8;
+    background-color: #FFF;
+}
+.register_list button i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #e8e8e8;
+}
+.register_list button i::after {
+    content: '\e91e';
+    font-family: icomoon;
+    color: #e8e8e8;
+}
+.register_list p:nth-of-type(2) {
+    clear: both;
+    margin-bottom: 10px;
+} 
+.register_list .border_color {
+    position: relative;
+    float: left;
+    width: 74px;
+    height: 42px;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 30px;
+    text-indent: 1em;
+    font-size: 14px;
+    line-height: 42px;
+    cursor: pointer;
+}
+.register_list .border_color i {
+    position: absolute;
+    top: 18px;
+    left: 47px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #9d9d9d;
+}
+.register_list input {
+    float: left;
+    width: 256px;
+    height: 42px;
+    border: 1px solid #e8e8e8;
+    margin-left: -1px;
+    text-indent: 1em;
+    cursor: auto;
+}
+.register_list input:last-of-type {
+    width: 330px;
+    height: 42px;
+    margin-top: 10px;
+    background: #FF6700;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFF;
+    cursor: pointer;
+}
+.register_list input:last-of-type:hover {
+    opacity: .8;
+}
+.register > p {
+    font-size: 14px;
+    margin-top: 70px;
+    color: #9D9D9D;
+}
+.register > p a {
+    color: #333;
+    font-weight: bold;
+}
+.error {
+    display: none;
+    position: absolute;
+    top: 168px;
+    left: -8px;
+    height: 20px;
+    margin: 8px 0 0 8px;
+    font-size: 14px;
+    color: #f66;
+}
+.error img {
+    width: 14px;
+    height: 14px;
+    margin: -2px 5px 0 0;
+}
+
+.footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+.footer p {
+    margin-bottom: 10px;
+}
+.footer i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/ghs.png);
+} 
+.footer a:hover {
+    color: #666;
+    cursor: pointer;
+}
+.footer {
+    color: #9D9D9D;
+}
+.footer p {
+    color: #333;
+}

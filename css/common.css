@@ -1,0 +1,411 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?tomleg');
+  src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+    url('../fonts/icomoon.woff?tomleg') format('woff'),
+    url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.l {
+    float: left;
+}
+.r {
+    float: right;
+}
+.color_red {
+    color: #FF6700;
+}
+.container {
+    width: 1226px;
+    margin: 0 auto;
+}
+.container-fluid {
+    background-color: #F5F5F5;
+}
+
+/* 快捷导航栏shortcut */
+.shortcut {
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+}
+.shortcut ul li {
+    float: left;
+    line-height: 40px;
+    margin-right: 17px;
+}
+.shortcut ul li a { 
+    color: #b0b0b0;
+}
+.shortcut ul li a:hover {
+    color: #fff;
+}
+.shortcut .l li {
+    position: relative;
+}
+.shortcut .l li:nth-child(-n+11)::after {
+    position: absolute;
+    right: -7px;
+    top: 14px;
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #3c423f;
+}
+.shortcut .downloadApp {
+    /* visibility: hidden; */
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -34px;
+    width: 124px;
+    height: 150px;
+    padding: 14px 0 18px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(170,170,170,.3);
+    /* opacity: 0; */
+    z-index: 1;
+    /* transition: all 1s; */
+}
+/* .shortcut .l li:nth-child(11):hover .downloadApp {
+    visibility: visible;
+    opacity: 1;
+    z-index: 999;
+} */
+.shortcut .downloadApp img {
+    height: 95px;
+}
+.shortcut .downloadApp p {
+    font-size: 16px;
+}
+.shortcut .downloadApp i {
+    position: absolute;
+    top: -18px;
+    left: 46px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: white;
+}
+.shortcut .r li {
+    position: relative;
+}
+.shortcut ul[class="r"] {
+    margin-right: 8px;
+}
+.shortcut .r li:nth-child(-n+2)::after {
+    position: absolute;
+    right: -8px;
+    top: 14px;
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #3c423f;
+}
+/* 购物车shopcar */
+.shopcar {
+    width: 120px;
+    height: 40px;
+    background-color: #424242;
+    text-align: center;
+    color: #b0b0b0;
+    line-height: 40px;
+    cursor: pointer;
+}
+.shopcar::before {
+    content: '\e93a';
+    font-family: icomoon;
+    font-size: 14px;
+    margin-right: 7px;
+}
+
+/* 头部header */
+.header {
+    height: 100px;
+}
+.header .logo a {
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin:22.5px 0 ;
+    background: url(../images/mi-logo.png) no-repeat 3px 3px ; 
+    background-color: #ff6700;
+    font-size: 0;
+    transition: all .3s;
+}
+.header .logo a:hover {
+    background: url(../images/mi-home.png) no-repeat 3px 3px ;
+    background-color: #ff6700;
+}
+.nav {
+    margin-left: 190px;
+}
+.nav li {
+    float: left;
+    /* margin-right: 20px; */
+    font-size: 16px;
+    line-height: 100px;
+}
+.nav li > a {
+    padding: 20px 20px 20px 0;
+}
+.search {
+    margin: 25px 0;
+}
+.search:hover input {
+    border-color: #b0b0b0;
+}
+.search input {
+    float: left;
+    width: 245px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    padding: 0 1em;
+}
+.search button {
+    position: relative;
+    float: left;
+    width: 52px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    background-color: #fff;
+}
+.search:hover button {
+    border-color: #b0b0b0;
+}
+.search button:hover {
+    background-color: #ff6700;
+}
+.search button::after {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    content: '\e986';
+    font-family: icomoon;
+    font-size: 18px
+}
+.search button:hover::after {
+    content: '\e986';
+    font-family: icomoon;
+    color: #FFF;
+}
+.search_dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 115px;
+    right: 198.3px;
+    width: 244.8px;
+    height: 240px;
+    margin-top: -1px;
+    border: 1px solid #FF6700;
+    z-index: 999;
+    background-color: #fff;
+}
+.search_dropdown_menu li {
+    height: 30px;
+    padding-left: 1.5em;
+    line-height: 30px;
+}
+.search_dropdown_menu li:hover {
+    background-color: #fafafa;
+}
+.search_dropdown_menu li:hover a {
+    color: #666;
+}
+.mobiles {
+    display: none;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    z-index: 900;
+    height: 230px;
+    width: 1519px;
+    padding: 0 146.5px;
+    border-top: .5px solid #E0E0E0;
+    box-shadow: 0px 3px 3px -3px rgba(0,0,0,1);
+    background-color: #FFF;
+}
+.mobiles li {
+    position: relative;
+    float: left;
+    width: 204.3px;
+    height: 100%;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 12px;
+}
+.mobiles img {
+    width: 160px;
+    height: 110px;
+}
+.mobiles p {
+    position: absolute;
+    top: 108px;
+    left: 0;
+    width: 204px;
+    height: 20px;
+}
+.mobiles .color_red {
+    position: absolute;
+    top: 128px;
+    left: 0;
+}
+.mobiles a {
+    color: #757575;
+}
+.mobiles li::after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 1px;
+    height: 100px;
+    background-color: #E0E0E0;
+}
+
+/* 底部footer */
+.mod_service li {
+    position: relative;
+    float: left;
+    width: 245.2px;
+    height: 80px;
+    font-size: 16px;
+    line-height: 80px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+.mod_service ul li:nth-child(-n+4)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 32px;
+    width: 1px;
+    height: 20px;
+    background: #e0e0e0;
+}
+.mod_service ul li a::before {
+    position: absolute;
+    font-family: icomoon;
+    font-size: 20px
+}
+.mod_service ul li:first-child a::before {
+    left: 51px;
+    top: 2px;
+    content: "\e991";
+}
+.mod_service ul li:nth-child(2) a::before {
+    left: 43px;
+    top: 1px;
+    content: "\e94d";
+}
+.mod_service ul li:nth-child(3) a::before {
+    left: 47px;
+    top: 1px;
+    content: "\e94e";
+}
+.mod_service ul li:nth-child(4) a::before {
+    left: 60px;
+    top: 1px;
+    content: "\e99f";
+}
+.mod_service ul li:nth-child(5) a::before {
+    left: 40px;
+    top: 1px;
+    content: "\e948";
+}
+.mod_help {
+    position: relative;
+    padding-top: 40px;
+    height: 192px;
+}
+.mod_help dl {
+    float: left;
+    width: 160px;
+}
+.mod_help dl dt {
+    margin-bottom: 26px;
+    font-size: 14px;
+}
+.mod_help dl dd {
+    margin-top: 10px;
+}
+.mod_help .mod_hotline {
+    position: relative;
+    width: 245.2px;
+    height: 152px;
+    text-align: center;
+}
+.mod_hotline span {
+    font-size: 22px
+}
+.mod_hotline button {
+    width: 120px;
+    height: 30px;
+    border: 1px solid #FF6700;
+    margin: 5px auto;
+    background-color: #FFF;
+    color: #FF6700;
+}
+.mod_hotline button:hover {
+    background-color: #FF6700;
+}
+.mod_hotline button:hover i {
+    color: #FFF;
+}
+.mod_hotline img {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+}
+.wxapp {
+    display: none;
+    position: absolute;
+    top: 155px;
+    right: 38px;
+    width: 110px;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,.2);
+    text-align: center;
+}
+.wxapp img {
+    width: 100px;
+}
+
+.mod_copyright p {
+    text-align: center;
+    height: 20.8px;
+}
+.mod_copyright .clearfix li {
+    float: left;
+    height: 16.2px;
+    margin: 14px 0;
+    padding: 0 8.6px;
+    border-left: 1px solid #333;
+    font-size: 14px;
+    line-height: 16.2px;
+}
+.mod_copyright ul li:first-child {
+    padding-left: 0;
+    border-left: 0;
+}
+.mod_copyright span {
+    font-size: 14px;
+}
+.mod_copyright ul:last-child {
+    height: 62.6px;
+    margin-top: 14px;
+}
+.mod_copyright ul:last-child li {
+    float: left;
+}
+.mod_copyright ul:last-child li:nth-child(n) {
+    margin-top: 30px;
+}
+.mod_copyright ul:last-child li:first-child {
+    margin-top: 0;
+}
+
